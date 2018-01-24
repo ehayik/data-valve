@@ -1,0 +1,18 @@
+{{#each users}}
+    dn: uid={{this.username}},ou=people,dc=pcservices,dc=cu
+    objectClass: posixAccount
+    objectClass: inetOrgPerson
+    {{!-- objectClass: organizationalPerson --}}
+    objectClass: top
+    cn: {{this.fullname}}
+    sn: {{this.lastname}}
+    uid: {{this.username}}
+    givenName: {{this.name}}
+    mail: {{this.email}}
+    telephoneNumber: {{this.phoneNumber}}
+    uidNumber: {{this.id}}
+    gidNumber: {{this.id}}
+    homeDirectory: {{this.homeDirectory}}
+    userPassword: {SSHA}U+DNiVT8Vpa9vgXm7/XqbvnxQdHvF13F
+
+{{/each}}

@@ -1,0 +1,33 @@
+{
+  "name": "data-valve",
+  "version": "1.0.0",
+  "description": "Data generation utility",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/ && rollup -c",
+    "start": "npm run build && node dist/app/data-valve.js"
+  },
+  "author": "eduardo.eljaiek@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "chance": "^1.0.13",
+    "cli-clear": "^1.0.4",
+    "figlet": "^1.2.0",
+    "inquirer": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.55.0",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-handlebars": "^1.0.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2"
+  }
+}
